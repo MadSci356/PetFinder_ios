@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLx-Iu-ZNM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="TDi-oL-Cvm">
+            <objects>
+                <viewController title="Jerry" id="QLx-Iu-ZNM" userLabel="Detail View Controller" customClass="DetailViewController" customModule="PetFinder" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tlB-r8-cDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-n6-Uo1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1322"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iZc-TA-c8K">
+                                        <rect key="frame" x="8" y="8" width="398" height="1203.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" image="Puppy" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-G0-K8Y" customClass="RemoteImageView" customModule="PetFinder" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="398"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZJz-G0-K8Y" secondAttribute="height" multiplier="1:1" id="IMU-XD-B1f"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jerry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHE-uj-f7t">
+                                                <rect key="frame" x="0.0" y="406" width="398" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-9a-tZD">
+                                                <rect key="frame" x="0.0" y="438.5" width="398" height="629"/>
+                                                <mutableString key="text">Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys hanging in the house with his person and going for walks.   Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys han hiiiging in the house with his person and going for walks. Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys hanging in the house with his person and going for walks. Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys hanging in the house with his person and going for walks. Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys hanging in the house with his person and going for walks. Vesper is a 5 yr old ACD/Australian Kelpie mix who is looking  for his forever person.   He has so much love to give and has truly been a joy to foster.   He is a  medium energy boy who enjoys hanging in the house with his person and going for walks. going for walks</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AnR-um-BKF">
+                                                <rect key="frame" x="0.0" y="1075.5" width="398" height="19.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-yl-UwT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Young" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuR-cv-hGh">
+                                                        <rect key="frame" x="38.5" y="0.0" width="359.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r6F-1H-V1F">
+                                                <rect key="frame" x="0.0" y="1103" width="398" height="19.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-L2-Jx0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO0-1s-qFD">
+                                                        <rect key="frame" x="36.5" y="0.0" width="361.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-Fc-qwT">
+                                                <rect key="frame" x="0.0" y="1130.5" width="398" height="32"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hII-ze-KDf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <state key="normal" title="Call for more Information"/>
+                                                        <connections>
+                                                            <action selector="phoneButtonPressed:" destination="QLx-Iu-ZNM" eventType="touchUpInside" id="O3r-Xh-mCT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb3-NH-L7F">
+                                                <rect key="frame" x="0.0" y="1170.5" width="398" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="View On PetFinder"/>
+                                                <connections>
+                                                    <action selector="openUrlButtonPressed" destination="QLx-Iu-ZNM" eventType="touchUpInside" id="a7f-dl-1ir"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cHE-uj-f7t" firstAttribute="top" secondItem="ZJz-G0-K8Y" secondAttribute="bottom" constant="8" id="SMB-CV-JcB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iZc-TA-c8K" firstAttribute="leading" secondItem="I8o-n6-Uo1" secondAttribute="leading" constant="8" id="3KO-Sx-N32"/>
+                                    <constraint firstAttribute="bottom" secondItem="iZc-TA-c8K" secondAttribute="bottom" id="5yt-v3-BIB"/>
+                                    <constraint firstItem="iZc-TA-c8K" firstAttribute="width" secondItem="I8o-n6-Uo1" secondAttribute="width" constant="-16" id="9R3-O8-EKo"/>
+                                    <constraint firstAttribute="trailing" secondItem="iZc-TA-c8K" secondAttribute="trailing" constant="8" id="gb5-x6-fdH"/>
+                                    <constraint firstItem="iZc-TA-c8K" firstAttribute="top" secondItem="I8o-n6-Uo1" secondAttribute="top" constant="8" id="jXT-nT-JHL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I8o-n6-Uo1" firstAttribute="leading" secondItem="g6b-rE-ixb" secondAttribute="leading" id="7K1-hC-Puj"/>
+                            <constraint firstItem="I8o-n6-Uo1" firstAttribute="bottom" secondItem="g6b-rE-ixb" secondAttribute="bottom" id="JkA-Vf-LdW"/>
+                            <constraint firstItem="I8o-n6-Uo1" firstAttribute="trailing" secondItem="g6b-rE-ixb" secondAttribute="trailing" id="KBz-Om-iaO"/>
+                            <constraint firstItem="I8o-n6-Uo1" firstAttribute="top" secondItem="g6b-rE-ixb" secondAttribute="top" id="eXA-qS-ubO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g6b-rE-ixb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jerry" id="awM-Ti-W8i">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="v0E-yB-1cA"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1400"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="IuR-cv-hGh" id="XQ5-cK-MOm"/>
+                        <outlet property="detailLabel" destination="GYT-9a-tZD" id="FNd-el-TLK"/>
+                        <outlet property="largeImage" destination="ZJz-G0-K8Y" id="9oN-U8-RtW"/>
+                        <outlet property="nameLabel" destination="cHE-uj-f7t" id="TZG-d2-bGY"/>
+                        <outlet property="openUrlButton" destination="rb3-NH-L7F" id="HMj-yb-zJ2"/>
+                        <outlet property="phoneButton" destination="hII-ze-KDf" id="QaA-RO-4Mf"/>
+                        <outlet property="sexLabel" destination="aO0-1s-qFD" id="xr1-Ct-uqy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9i-2p-9nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Puppy" width="160" height="106.5"/>
+    </resources>
+</document>

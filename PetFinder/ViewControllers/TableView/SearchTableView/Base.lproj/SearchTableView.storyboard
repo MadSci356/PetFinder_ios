@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMZ-uB-jbt">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pets-->
+        <scene sceneID="WPR-oP-8wk">
+            <objects>
+                <tableViewController title="Pets" id="LMZ-uB-jbt" customClass="SearchTableViewController" customModule="PetFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RVa-Fx-Hb0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PetTableViewCell" rowHeight="99" id="FMH-3C-Thq" customClass="PetTableViewCell" customModule="PetFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="99"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FMH-3C-Thq" id="rdQ-BJ-NZS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="98.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1y3-iS-ijg">
+                                            <rect key="frame" x="8" y="8" width="380.66666666666669" height="82.666666666666671"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Puppy" translatesAutoresizingMaskIntoConstraints="NO" id="T70-8W-eop" customClass="RemoteImageView" customModule="PetFinder" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="T70-8W-eop" secondAttribute="height" multiplier="1:1" id="4mI-9f-3TR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-SV-Sue">
+                                                    <rect key="frame" x="91" y="0.0" width="289.5" height="49"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jerry" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2X-oD-ePY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="289.5" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F40-NA-Eby">
+                                                            <rect key="frame" x="0.0" y="32" width="289.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="eJq-SV-Sue" firstAttribute="leading" secondItem="T70-8W-eop" secondAttribute="trailing" constant="8" id="Qcj-Rs-pIn"/>
+                                                <constraint firstItem="eJq-SV-Sue" firstAttribute="top" secondItem="1y3-iS-ijg" secondAttribute="top" id="yxl-n1-KMi"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1y3-iS-ijg" secondAttribute="bottom" constant="-3" id="LGT-xT-Elr"/>
+                                        <constraint firstItem="1y3-iS-ijg" firstAttribute="centerY" secondItem="rdQ-BJ-NZS" secondAttribute="centerY" id="c8w-O9-Vsb"/>
+                                        <constraint firstItem="1y3-iS-ijg" firstAttribute="leading" secondItem="rdQ-BJ-NZS" secondAttribute="leadingMargin" constant="-12" id="nmS-kI-YvR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="T70-8W-eop" firstAttribute="width" secondItem="FMH-3C-Thq" secondAttribute="width" multiplier="0.2" id="58H-jp-jrz"/>
+                                    <constraint firstItem="eJq-SV-Sue" firstAttribute="width" secondItem="FMH-3C-Thq" secondAttribute="width" multiplier="0.7" id="Pxf-Ye-hsY"/>
+                                    <constraint firstItem="rdQ-BJ-NZS" firstAttribute="width" secondItem="FMH-3C-Thq" secondAttribute="width" id="c3Y-84-zRI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="iconImageView" destination="T70-8W-eop" id="puw-1K-r6L"/>
+                                    <outlet property="nameLabel" destination="L2X-oD-ePY" id="Vsp-oB-8Kl"/>
+                                    <outlet property="typeLabel" destination="F40-NA-Eby" id="Scu-hD-XdC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LMZ-uB-jbt" id="wKr-Fs-wGQ"/>
+                            <outlet property="delegate" destination="LMZ-uB-jbt" id="Tez-Xw-pJL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pets" id="tmL-oM-b4J"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0M-Am-OFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.956521739130437" y="-495.6521739130435"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Puppy" width="160" height="106.5"/>
+    </resources>
+</document>
