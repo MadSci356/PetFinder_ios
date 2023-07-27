@@ -2,7 +2,7 @@
 
 App that searches for pets using a REST API and makes jay really happy if the pets happen to have bunny ears.
 
-Demo app was created while learning iOS app development in 2019. Not updated with the latest tech.
+**Demo app was created while learning iOS app development in 2019. Not updated with the latest tech.**
 
 Improvements to be made: 
 - Use modern collection views API with Combine data pipelines
